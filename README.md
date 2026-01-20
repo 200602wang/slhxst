@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>适老化洗漱池设计 - 带图片放大功能</title>
+    <title>适老化洗手池设计 - 洗漱台剖面图</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
@@ -502,6 +502,32 @@
         .section-zoom-btn:hover {
             background: rgba(255, 153, 0, 1);
         }
+        
+        .sink-info-box {
+            margin-top: 20px;
+            padding: 20px;
+            background: #f0f8ff;
+            border-radius: 10px;
+            border-left: 4px solid #4a6fa5;
+        }
+        
+        .sink-info-box h4 {
+            color: #2c3e5a;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .sink-info-box ul {
+            padding-left: 20px;
+            color: #5a6c7d;
+        }
+        
+        .sink-info-box li {
+            margin-bottom: 8px;
+        }
     </style>
 </head>
 <body>
@@ -544,7 +570,7 @@
 
         <div class="section-container">
             <div class="section-title">
-                <span><i class="fas fa-cut"></i> 适老化剖面结构详图</span>
+                <span><i class="fas fa-cut"></i> 洗漱台剖面图</span>
                 <button class="section-zoom-btn" id="enlargeSectionBtn">
                     <i class="fas fa-search-plus"></i> 放大查看
                 </button>
@@ -552,26 +578,26 @@
             <div class="section-image-container" id="sectionImageContainer">
                 <img id="sectionImage" 
                      src="https://image2url.com/r2/default/images/1768819927982-247b9674-06f4-422e-8488-77281d523438.png" 
-                     alt="适老化洗手池剖面结构详图"
+                     alt="洗漱台剖面图"
                      onload="handleImageLoad()"
                      onerror="handleImageError()">
                 <div class="image-overlay">
                     <i class="fas fa-search-plus"></i>
-                    <h3>点击查看大图</h3>
+                    <h3>点击查看洗漱台剖面大图</h3>
                     <p>点击图片或使用右上角按钮放大查看细节</p>
                 </div>
                 <div id="loadingMessage" class="image-placeholder" style="display: none; position: absolute;">
                     <i class="fas fa-spinner fa-spin"></i>
-                    <h3>正在加载剖面图...</h3>
+                    <h3>正在加载洗漱台剖面图...</h3>
                 </div>
                 <div id="errorMessage" class="image-placeholder" style="position: absolute;">
                     <i class="fas fa-exclamation-triangle"></i>
-                    <h3>剖面图加载失败</h3>
+                    <h3>洗漱台剖面图加载失败</h3>
                     <p>无法从链接加载图片</p>
                     <div style="margin-top: 20px; text-align: left; background: #f0f8ff; padding: 15px; border-radius: 8px;">
                         <p>解决方法：</p>
                         <ol style="margin-left: 20px; margin-top: 10px;">
-                            <li>将剖面图保存为 <strong>section_image.png</strong></li>
+                            <li>将洗漱台剖面图保存为 <strong>section_image.png</strong></li>
                             <li>放入与此HTML文件相同的文件夹中</li>
                             <li>刷新页面即可显示</li>
                         </ol>
@@ -580,6 +606,18 @@
             </div>
             <div style="padding: 15px; color: #666; font-size: 0.9rem; text-align: center;">
                 点击图片可放大查看细节。支持鼠标滚轮缩放和拖拽查看。
+            </div>
+            
+            <div class="sink-info-box">
+                <h4><i class="fas fa-info-circle"></i> 洗漱台剖面图应展示的信息：</h4>
+                <ul>
+                    <li>洗手池内部结构与支撑框架</li>
+                    <li>台面、柜体与墙面的连接方式</li>
+                    <li>给排水管道的预设位置与走向</li>
+                    <li>安全扶手安装位置与承重结构</li>
+                    <li>适老化设计的无障碍空间尺寸</li>
+                    <li>关键部件的详细尺寸标注</li>
+                </ul>
             </div>
         </div>
     </div>
@@ -685,19 +723,19 @@
         <p><strong><i class="fas fa-exclamation-triangle"></i> 重要提示：</strong> 适老化洗手池的设计和施工需严格遵守《无障碍设计规范》(GB50763-2012)及《老年人照料设施建筑设计标准》(JGJ450-2018)。</p>
         <ol style="margin-top:10px; margin-left:20px;">
             <li>本页面三维模型由 Sketchfab 用户 <strong>风车树下</strong> 创建与分享，遵循 <strong>CC Attribution</strong> 许可协议。</li>
-            <li>剖面图需保存为 <strong>section_image.png</strong> 并放置于此HTML文件同一目录下，页面将自动加载显示。</li>
+            <li>洗漱台剖面图需保存为 <strong>section_image.png</strong> 并放置于此HTML文件同一目录下，页面将自动加载显示。</li>
             <li>适老化设计应充分考虑使用者个体差异，建议施工前进行现场适应性测试。</li>
         </ol>
     </div>
 
-    <!-- 剖面图放大模态框 -->
+    <!-- 洗漱台剖面图放大模态框 -->
     <div class="modal" id="sectionModal">
         <button class="close-modal" id="closeSectionModal">&times;</button>
         <div class="zoom-indicator" id="zoomIndicator">缩放: 100%</div>
         <div class="modal-content">
-            <img id="modalImage" src="" alt="放大后的适老化洗漱池剖面图">
+            <img id="modalImage" src="" alt="洗漱台剖面图 - 放大查看">
         </div>
-        <div class="image-info" id="imageInfo">适老化洗漱池剖面结构详图</div>
+        <div class="image-info" id="imageInfo">洗漱台剖面图 - 适老化洗手池设计</div>
         <div class="modal-controls">
             <button class="modal-btn" id="zoomInBtn">
                 <i class="fas fa-search-plus"></i> 放大
@@ -759,7 +797,7 @@
             img.src = 'section_image.png';
         }
         
-        // 剖面图模态框控制
+        // 洗漱台剖面图模态框控制
         const enlargeSectionBtn = document.getElementById('enlargeSectionBtn');
         const closeSectionModal = document.getElementById('closeSectionModal');
         const sectionModal = document.getElementById('sectionModal');
