@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>适老化洗手池设计 - 带图片放大功能</title>
+    <title>适老化洗洗漱池设计 - 带图片放大功能</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
@@ -695,9 +695,9 @@
         <button class="close-modal" id="closeSectionModal">&times;</button>
         <div class="zoom-indicator" id="zoomIndicator">缩放: 100%</div>
         <div class="modal-content">
-            <img id="modalImage" src="" alt="放大后的适老化洗手池剖面图">
+            <img id="modalImage" src="" alt="放大后的适老化洗漱池剖面图">
         </div>
-        <div class="image-info" id="imageInfo">适老化洗手池剖面结构详图</div>
+        <div class="image-info" id="imageInfo">适老化洗漱池剖面结构详图</div>
         <div class="modal-controls">
             <button class="modal-btn" id="zoomInBtn">
                 <i class="fas fa-search-plus"></i> 放大
