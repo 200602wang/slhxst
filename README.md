@@ -576,9 +576,9 @@
                 </button>
             </div>
             <div class="model-container">
-                <!-- 更新后的三维模型 -->
+                <!-- 已更新为您指定的三维模型嵌入代码 -->
                 <div class="sketchfab-embed-wrapper"> 
-                    <iframe title="浴室洗手池" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/f4c002003a6b45408c7fd5586e435926/embed?autospin=1&preload=1"> 
+                    <iframe title="浴室洗手池" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/f4c002003a6b45408c7fd5586e435926/embed?autospin=1&autostart=1&preload=1"> 
                     </iframe> 
                     <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> 
                         <a href="https://sketchfab.com/3d-models/f4c002003a6b45408c7fd5586e435926?utm_medium=embed&utm_campaign=share-popup&utm_content=f4c002003a6b45408c7fd5586e435926" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"> 浴室洗手池 </a> by 
@@ -916,20 +916,23 @@
     <div class="modal" id="modelModal">
         <div class="modal-content" style="width: 95%; height: 95%;">
             <button class="close-modal" id="closeModelModal">&times;</button>
-            <iframe id="modalIframe" 
-                    title="适老化洗手池三维模型全屏"
-                    frameborder="0" 
-                    allowfullscreen 
-                    mozallowfullscreen="true" 
-                    webkitallowfullscreen="true" 
-                    allow="autoplay; fullscreen; xr-spatial-tracking" 
-                    xr-spatial-tracking 
-                    execution-while-out-of-viewport 
-                    execution-while-not-rendered 
-                    web-share 
-                    src="https://sketchfab.com/models/f4c002003a6b45408c7fd5586e435926/embed?autospin=1&preload=1"
-                    style="width:100%; height:100%; border:none;">
-            </iframe>
+            <!-- 此处也已更新为新的模型嵌入代码 -->
+            <div class="sketchfab-embed-wrapper" style="width:100%; height:100%;">
+                <iframe id="modalIframe" 
+                        title="浴室洗手池"
+                        frameborder="0" 
+                        allowfullscreen 
+                        mozallowfullscreen="true" 
+                        webkitallowfullscreen="true" 
+                        allow="autoplay; fullscreen; xr-spatial-tracking" 
+                        xr-spatial-tracking 
+                        execution-while-out-of-viewport 
+                        execution-while-not-rendered 
+                        web-share 
+                        src="https://sketchfab.com/models/f4c002003a6b45408c7fd5586e435926/embed?autospin=1&autostart=1&preload=1"
+                        style="width:100%; height:100%; border:none;">
+                </iframe>
+            </div>
         </div>
     </div>
 
